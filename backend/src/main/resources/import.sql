@@ -23,3 +23,7 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'https://www.publicdomainpictures.net/pictures/290000/nahled/training-course.jpg', '1', '1');
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Suporte a dúvidas', 'Forum de perguntas e respostas', 2, 'https://www.publicdomainpictures.net/pictures/290000/nahled/training-course.jpg', '2', '1');
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives técnicas', 'Tire suas dúvidas ao vivo', 3, 'https://www.publicdomainpictures.net/pictures/290000/nahled/training-course.jpg', '0', '1');
+
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Introdução ao  HTML', 'Iniciamos os primeiros passos', 1, 'https://www.publicdomainpictures.net/pictures/290000/nahled/training-course.jpg', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Tags iniciais', 'Principais tags para o início no HTML', 2, 'https://www.publicdomainpictures.net/pictures/290000/nahled/training-course.jpg', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Propriedades do HTML', 'Propriedades diversificadas no HTML', 3, 'https://www.publicdomainpictures.net/pictures/290000/nahled/training-course.jpg', 1, 2);
