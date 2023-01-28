@@ -1,4 +1,4 @@
-package com.devsuperior.dslearn.config;
+package com.devsuperior.dslearn.components.config;
 
 import com.devsuperior.dslearn.components.JwtTokenEnhancer;
 import org.springframework.beans.factory.annotation.Autowired;
