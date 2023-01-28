@@ -30,3 +30,18 @@ INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prer
 
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2023-01-20T15:00:00Z', null, true, false);
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2023-01-20T20:00:00Z', null, true, false);
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('1° Aula do capítulo 1', 1, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (1, 'Iniciando os estudos', 'https://www.youtube.com/watch?v=0_e9Egeyk2E&t=22s');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('2° Aula do capítulo 1', 2, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (2, 'Continuando os estudos', 'https://www.youtube.com/watch?v=0_e9Egeyk2E&t=22s');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('3° Aula do capítulo 1', 3, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (3, 'Última aula antes do exercício', 'https://www.youtube.com/watch?v=0_e9Egeyk2E&t=22s');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Tarefa do capítulo 1', 4, 1);
+INSERT INTO tb_task (id, description, question_Count, approval_Count, weight, due_Date) VALUES (4, 'Crie um formulário HTML', 5, 4, 1.0, null);
+
+INSERT INTO tb_lesson_enrollment (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
+INSERT INTO tb_lesson_enrollment (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
