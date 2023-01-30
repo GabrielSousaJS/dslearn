@@ -1,4 +1,4 @@
-package com.devsuperior.dslearn.components.config;
+package com.devsuperior.dslearn.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
